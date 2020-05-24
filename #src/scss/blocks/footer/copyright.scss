@@ -1,0 +1,17 @@
+.copyright {
+	padding-top: 17px;
+	padding-bottom: 18px;
+
+	text-align: center;
+	font-size: 12px;
+	color: $light-text;
+
+	background-color: $copyColor;
+
+	@include tablet {
+		padding-top: 29px;
+		padding-bottom: 32px;
+
+		font-size: 16px;
+	}
+}

@@ -1,0 +1,55 @@
+//GLOBAL
+
+@import "variables";
+@import "normalize";
+@import "global";
+@import "mixins";
+@import "fonts";
+@import "visually-hidden";
+@import "container";
+
+//HEADER
+
+@import "blocks/header/page-header";   //header
+@import "blocks/header/page-nav"; 		//navigation
+@import "blocks/header/nav-list";  	//navigation list
+@import "blocks/header/burger-btn";    //burger button
+@import "blocks/header/request"; 		//recall blocks width button
+@import "blocks/header/contacts";		//recall blocks tel and mail
+@import "blocks/header/tel-number";	//recall number
+@import "blocks/header/button";		//button
+
+//MAIN
+
+@import "blocks/main/tag-bottom";		//fly tags bottom
+@import "blocks/main/tag";				//fly tags
+@import "blocks/main/page-main";		//main
+@import "blocks/main/man-info";		//blocks with man
+@import "blocks/main/about";			//about man info
+@import "blocks/main/page-section";	//sections
+@import "blocks/main/button";			//buttons
+@import "blocks/main/list-skills";		//list man skills
+@import "blocks/main/slider";			//page slider
+@import "blocks/main/slider-list";		//slider list
+@import "blocks/main/slide";			//slider slide
+@import "blocks/main/slider-points";	//slider points?
+@import "blocks/main/price";			//price			
+@import "blocks/main/container";		//small container
+
+//FOOTER
+
+@import "blocks/footer/page-footer";	//footer
+@import "blocks/footer/container";		//footer container
+@import "blocks/footer/nav-list";		//footer navigation	 
+@import "blocks/footer/contacts";		//footer contacts
+@import "blocks/footer/btn-social";	//social icon for sprite and button		
+@import "blocks/footer/button";		//footer button
+@import "blocks/footer/socials";		//social icon
+@import "blocks/footer/copyright";		//landing copyright
+
+
+
+
+
+
+

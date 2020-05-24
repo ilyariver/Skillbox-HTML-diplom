@@ -1,0 +1,9 @@
+.container {
+
+	@include tablet {
+		&_flex_between {
+			display: flex;
+			justify-content: space-between;
+		}
+	}	
+}

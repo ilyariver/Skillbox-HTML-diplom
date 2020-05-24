@@ -1,0 +1,70 @@
+.man-info {
+	position: relative;
+	overflow: hidden;
+
+	&__about {		
+		padding-top: 405px;
+	}
+
+	&__picture {
+		position: absolute;
+		top: 0;
+		right: 0;
+
+		width: 320px;
+		
+		padding-top: 52px;
+		padding-left: 77px;
+
+		background-image: $ellips;
+		background-repeat: no-repeat;
+		background-position: -62px 92px;
+    	background-size: 477px 399px;
+	}
+
+	&__container {
+		position: relative;
+	}
+
+	@include tablet {
+		&__about {		
+			padding-top: 228px;
+			padding-bottom: 229px;
+		}
+
+		&__container {
+			display: flex;
+		}
+
+		&__picture {
+			right: -404px;
+
+			width: 953px;
+
+    		padding-top: 3px;
+    		padding-left: 35px;
+
+		    background-position: 1px 138px;
+    		background-size: 919px 632px;
+		}
+	}
+
+	@include desktop {
+		&__about {		
+			padding-top: 217px;
+			padding-bottom: 236px;
+		}
+
+		&__picture {
+			top: 2px;
+
+		    width: 857px;
+
+		    padding-top: 0px;
+		    padding-left: 43px;
+
+		    background-position: 0 31px;
+		    background-size: auto;
+		}
+	}
+}

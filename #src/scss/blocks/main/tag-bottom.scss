@@ -1,0 +1,112 @@
+.tag-bottom {
+	position: relative;
+	display: none;
+	&__simbol {
+		color: #fff;
+		font-weight: 700;
+		position: absolute;
+	}
+
+	@include tablet {						
+		display: block;
+		
+		&__simbol_1 {	
+			display: none;
+			right: 0px;
+			bottom: 0px;
+
+			font-size: 48px;
+
+			transform: rotate(-20deg) translate(0px, 0px);
+			transition: transform 0.6s cubic-bezier(1, 0.82, 0.65, 1.18);		//simbol_1 правые скобки
+		}																		//simbol_2 решетка
+																				//simbol_3 закрытый тег
+																				//simbol_4 левые скобки
+		&__simbol_2 {															//simbol_5 тег div
+		    left: -300px;
+			bottom: 0;
+
+			font-size: 57px;	
+
+			transform: rotate(17deg) translate(0px, 0px);
+			transition: transform 0.8s cubic-bezier(1, 0.82, 0.65, 1.18);
+		}
+
+		&__simbol_3 {
+			right: -71px;
+			bottom: 0px;     
+
+			font-size: 40px;
+
+			transform: rotate(-24deg) translate(-139px, -96px);
+			transition: transform 0.7s cubic-bezier(1, 0.82, 0.65, 1.18);
+		}
+
+		&__simbol_4 {
+			top: 0px;
+		    left: -71px;
+
+		    font-size: 34px;
+
+		    transform: rotate(26deg) translate(60px, -417px);
+			transition: transform 0.9s cubic-bezier(1, 0.82, 0.65, 1.18);
+		}
+
+		&__simbol_5 {
+		    right: 0px;
+			bottom: -41px;
+
+			font-size: 25px;
+
+			transform: rotate(22deg) translate(-451px, 105px);
+			transition: transform 0.9s cubic-bezier(1, 0.82, 0.65, 1.18);
+		} 
+
+	}
+	
+
+	@include desk-m {
+		&__simbol_1 {
+			display: block;
+
+			right: 0px;
+			bottom: -60px;
+
+			font-size: 48px;
+
+	        transform: rotate(-20deg) translate(-65px, -138px);
+			transition: transform 0.6s cubic-bezier(1, 0.82, 0.65, 1.18);
+		}
+
+		&__simbol_2 {
+		    left: -300px;
+					
+	        transform: rotate(17deg) translate(509px, -207px);
+		}
+
+		&__simbol_3 {
+			top: -24px;
+			right: -71px;     
+
+			font-size: 40px;
+
+	        transform: rotate(-24deg) translate(-147px, -354px);
+			transition: transform 0.7s cubic-bezier(1, 0.82, 0.65, 1.18);
+		}
+
+		&__simbol_4 {
+		    left: -71px;
+		    
+		    font-size: 47px;
+
+	        transform: rotate(26deg) translate(47px, -362px);
+		}
+
+		&__simbol_5 {
+		    font-size: 36px;
+
+	        transform: rotate(22deg) translate(-405px, 98px);
+		    transition: transform 0.9s cubic-bezier(1, 0.82, 0.65, 1.18);
+		}
+	}
+}

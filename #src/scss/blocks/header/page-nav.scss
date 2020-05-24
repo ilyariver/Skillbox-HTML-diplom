@@ -1,0 +1,12 @@
+.page-nav {
+
+	&__burger {
+		margin-top: 5px;
+	}
+
+	@include tablet {
+		&__burger {
+			margin-top: 7px;
+		}
+	}
+}

@@ -1,0 +1,39 @@
+.slide {
+	&__figure {
+		min-width: 282px;
+
+    	margin: 0;
+	}
+
+	&__text {
+		margin: 0;
+		padding-top: 10px;
+
+		color: $second-txt-color;
+		font-size: 18px;
+		font-weight: 400;
+	}
+
+	@include tablet {
+		&__figure {
+			min-width: 456px;
+		}
+
+		&__text {
+			padding-top: 16px;
+
+			font-size: 25px;
+		}
+	}
+
+	@include desktop {
+		&__figure {
+			min-width: 370px;
+		}
+
+		&__text {
+			padding-top: 30px;
+			font-size: 20px;
+		}
+	}
+}

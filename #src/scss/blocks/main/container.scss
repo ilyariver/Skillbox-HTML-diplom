@@ -1,0 +1,18 @@
+.container {	
+
+	@include tablet {
+		&_mini {
+			width: 748px;
+		}
+	}
+
+	@include desktop {
+		&_mini {
+			width: 1200px;
+		}
+
+		&_little {
+			width: 973px;
+		}
+	}
+}

@@ -1,0 +1,73 @@
+.slider {
+	position: relative;	
+
+	&__arrow {
+		display: none;
+	}
+
+	&__list {
+		margin-bottom: 37px;
+	}
+
+	&__points {
+		margin-bottom: 44px;
+	}
+
+	@include tablet {
+		&__list {
+			margin-bottom: 95px;
+		}
+
+		&__points {
+			margin-bottom: 97px;
+		}
+
+		&__item {
+			margin-right: 36px;
+		}
+	}
+
+	@include desktop {
+		&__arrow {
+			display: block;
+
+			position: absolute;
+			top: 34.3%;
+
+			background-image: $arrow;
+			background-repeat: no-repeat;
+
+			width: 61px;
+			height: 61px;
+
+			border: none;
+			border-radius: 50%;
+
+			cursor: pointer;
+
+			transition: $transition;
+
+			&_left {
+				left: -2.6%;
+			}
+
+			&_right {
+				right: -2.6%;
+				transform: rotate(180deg);
+			}
+
+			&:hover {
+				box-shadow: 0 0 13px 3px #0000001c;
+				opacity: 0.8;
+			}
+		}
+
+		&__list {
+			margin-bottom: 93px;
+		}
+
+		&__item {
+			margin-right: 30px;
+		}
+	}
+}

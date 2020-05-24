@@ -1,0 +1,32 @@
+.nav-list {
+	display: none;
+	&__item {
+		margin-right: 32px;
+		transition: $transition;	
+	}
+
+	&__link {
+		display: inline-block;
+		&:after {
+			content: "";
+			display: block;
+			width: 100%;
+			height: 1px;
+			background-color: $simply-pink;
+			transition: $transition;
+			transform: translateY(1px) scale(0);
+		}
+		
+		&:hover {
+			color: $simply-pink;
+			&:after {
+				transform: translateY(2px) scale(1);
+			}
+		}
+	}
+
+	@include desktop {
+		display: flex;
+		padding-top: 12px;		
+	}
+}

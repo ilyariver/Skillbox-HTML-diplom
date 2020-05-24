@@ -1,0 +1,16 @@
+.btn-social {
+	&__button {
+		margin-bottom: 50px;
+	}
+
+	@include tablet {
+		&__button {
+			margin-bottom: 31px;
+		}
+	}
+
+	@include desktop {
+		padding-right: 22px;
+	}
+
+}

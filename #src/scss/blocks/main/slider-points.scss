@@ -1,0 +1,30 @@
+.slider-points {
+	&__btn {
+		width: 10px;
+		height: 10px;
+
+		padding: 0;
+
+		border-radius: 50%;
+		border: none;
+
+		&:nth-child(2) {
+			margin: 0 12px;
+		}
+	}
+
+	@include tablet {
+		&__btn {
+			width: 18px;
+			height: 18px;
+
+			&:nth-child(2) {
+				margin: 0 28px;
+			}
+		}
+	}
+
+	@include desktop {
+		display: none;
+	}
+}

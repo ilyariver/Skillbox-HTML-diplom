@@ -1,0 +1,11 @@
+.contacts {	
+	font-size: 18px;
+	font-weight: 700;
+	line-height: 29px;
+	font-style: normal;
+
+	@include tablet {
+		font-size: 25px;
+		line-height: 42px;
+	}
+}

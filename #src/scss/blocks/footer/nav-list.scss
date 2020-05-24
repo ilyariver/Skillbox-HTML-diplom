@@ -1,0 +1,23 @@
+.nav-list {
+
+	&__item {
+		margin-bottom: 12px;
+
+		&_grey {
+			font-size: 15px;
+			color: $second-txt-color;
+		}
+	}
+
+
+	@include tablet {
+
+		&__item {
+			margin-bottom: 8px;
+
+			&_grey {
+				font-size: 18px;
+			}
+		}
+	}
+}

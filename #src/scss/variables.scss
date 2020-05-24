@@ -1,0 +1,63 @@
+// @color: #;
+
+// width
+
+$width-tablet:  1045px;
+$width-desktop: 1300px;
+
+// color
+
+$main-color: #fbfbfb;
+$secondary-color: #fff;
+$colorful: linear-gradient(13deg, #ff8f5a 0%, #ff2f96 99%, #ff2f96 100%);
+$copyColor: #31293c;
+
+$global-txt-color: #1f1f24;
+$second-txt-color: #8993ad;
+
+$find-buttons: #ff4e2e;
+$second-buttons: #f82370;
+$simply-pink: #fc557c;
+$button-txt: #fff;
+$light-text: #fff;
+$transper-txt: #f53f4f;
+
+$colorTags: linear-gradient(to top right, #ff8a5d, #ff2f96);
+
+// for hover
+
+$darken-button: darken($find-buttons, 30%);
+$transition: 0.2s ease-in-out;
+
+// border
+
+$color-border: 1px solid $second-buttons;
+
+// background image
+
+$image-call: url("../img/header/call-mobile.png");
+$image-burger: url("../img/header/gamburger_btn.png");
+
+$ellips: url("../img/main/fig.svg");
+
+$icon-1: url("../img/main/01.png");
+$icon-2: url("../img/main/02.png");
+$icon-3: url("../img/main/03.png");
+$icon-4: url("../img/main/04.png");
+
+$arrow: url("../img/main/arrow.png");
+
+$callBlack: url("../img/footer/phone-icon-black.png");
+$callColor: url("../img/footer/phone-icon.png");
+$mailBlack: url("../img/footer/envelope-icon-black.png");
+$mailColor: url("../img/footer/envelope-icon.png");
+$socials: url("../img/footer/sprite.png");
+
+
+// font size
+
+$mobile-titles: 30px;
+$tablet-titles: 54px;
+$desk-h1: 80px;
+$global-fz: 16px;
+

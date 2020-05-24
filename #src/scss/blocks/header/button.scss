@@ -1,0 +1,42 @@
+.button {
+	background-repeat: no-repeat;
+	background-color: transparent;
+
+	border: none;
+
+	cursor: pointer;
+	
+	transition: $transition;
+	
+	&_style_phone {
+		width: 26px;
+		height: 26px;
+		
+		background-image: $image-call;
+	}
+
+	&__text {
+		display: none;
+	}
+
+	@include tablet {
+		
+		&_style_phone {
+			width: 207px;
+			height: 45px;
+
+			border: 1px solid #f82370;
+			background-image: none;
+			color: $second-buttons;
+
+			&:hover {
+				color: $secondary-color;
+				background-color: $second-buttons;
+			}
+		}
+
+		&__text {
+			display: block;
+		}
+	}
+}

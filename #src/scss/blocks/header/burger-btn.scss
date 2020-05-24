@@ -1,0 +1,21 @@
+.burger-btn {	
+	width: 24px;
+	height: 24px;
+
+	background-image: $image-burger;
+	background-repeat: no-repeat;
+	background-size: 24px 18px;
+	background-color: transparent;
+	border: none;
+
+	@include tablet {
+		width: 45px;
+		height: 32px;
+
+		background-size: 45px 32px;
+	}
+
+	@include desktop {
+		display: none;
+	}
+}

@@ -1,0 +1,58 @@
+.price {
+	padding-top: 41px;
+	padding-bottom: 42px;
+
+	background-image: $colorful;
+	color: $light-text;
+
+	&__text {
+		margin: 0 0 33px 0;
+
+		font-size: 28px;
+		font-weight: 700;
+		line-height: 40px;
+
+		&:after {
+			content: '*';
+		}
+	}
+
+	&__note {
+		position: relative;
+
+		margin: 0 0 0 0;
+		padding-left: 13px;
+
+		&:before {
+			content: "*";
+			position: absolute;
+			top: 3px;
+			left: 0;
+		}		
+	}
+
+	&__small {
+		font-size: 15px;
+		line-height: 30px;
+	}
+
+	@include tablet {
+		padding-top: 73px;
+		padding-bottom: 80px;
+
+		&__text {
+			margin: 0 0 31px 0;
+
+			font-size: 45px;
+			line-height: 60px;
+		}
+
+		&__note {
+			padding-right: 130px;
+		}
+
+		&__small {
+			font-size: 18px;
+		}
+	}
+}

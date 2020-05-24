@@ -1,0 +1,50 @@
+.about {
+	position: relative;
+	z-index: 5;
+
+	text-align: center;
+
+	&__title {
+		margin: 0 0 22px 0;
+		line-height: 24px;
+	}
+
+	&__name {
+		display: block;
+		margin-bottom: 13px;
+
+		font-size: 30px;
+	}
+
+	&__profession {
+		display: block;
+
+		color: #8993ad;
+		font-size: 16px;
+		font-weight: 400;
+	}
+
+	@include tablet {
+		text-align: left;
+
+		&__name {
+			margin-bottom: 42px;
+
+			font-size: 54px;
+
+		}
+
+		&__profession {
+			margin-bottom: 49px;
+			font-size: 25px;			
+		}
+	}
+
+	@include desktop {
+		&__name {
+			margin-bottom: 53px;
+
+			font-size: 80px;
+		}
+	}
+}

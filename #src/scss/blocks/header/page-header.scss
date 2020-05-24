@@ -1,0 +1,12 @@
+.page-header {
+	display: flex;
+	justify-content: space-between;
+
+	padding-top: 25px;
+	padding-bottom: 25px;
+
+	@include tablet {
+		padding-top: 30px;
+		padding-bottom: 30px;
+	}
+}

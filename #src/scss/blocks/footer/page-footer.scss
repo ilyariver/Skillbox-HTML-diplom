@@ -1,0 +1,52 @@
+.page-footer {
+	padding-top: 46px;
+
+	&__nav {
+		display: flex;
+		flex-direction: column;
+
+		margin-bottom: 25px;
+	}
+
+	&__contacts {
+		margin-bottom: 21px;
+	}
+
+	&__copyright {
+		margin: 47px 0 0 0;
+	}
+
+	@include tablet {
+		padding-top: 100px;
+
+		&__nav {
+			margin-bottom: 0;
+
+			padding-top: 5px;
+		}
+
+		&__contacts {
+			margin-left: 11px;
+
+			padding-top: 5px; 
+		}
+
+		&__copyright {
+			margin: 41px 0 0 0;
+		}
+	}
+
+	@include desktop {
+		padding-top: 77px;
+
+		&__nav {
+			margin-bottom: 0;
+
+			padding-top: 5px;
+		}
+
+		&__contacts {
+		    margin-left: 49px;
+		}
+	}
+}

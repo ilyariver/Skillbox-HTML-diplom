@@ -1,0 +1,229 @@
+.tag {
+	&__simbol{
+		&:nth-child(n+1):nth-child(-n+6) {
+			position: absolute;
+
+			color: transparent;
+
+			font-weight: 700;
+
+			background-image: $colorTags;
+			-webkit-background-clip: text;
+			-moz-background-clip: text;
+		}
+	}
+
+	&__simbol_1 {
+	   	display: none;
+	}
+	
+	&__simbol_2 {										//нижний див		
+	    top: 0;
+	    right: -40px;
+
+	    font-size: 15px;
+
+		transform: rotate(15deg) translate(-57px, 85px);
+		transition: transform 0.6s cubic-bezier(1, 0.82, 0.65, 1.18);
+	}
+	
+	&__simbol_3 {										//верхний див	
+		top: 0px;
+	    right: -100px;
+
+		transition: transform 0.5s cubic-bezier(1, 0.82, 0.65, 1.18);
+	}
+	
+	&__simbol_4  {										//скобки
+		top: 0px;
+	    left: -50px;	
+
+		font-size: 25px;
+
+		transform: rotate(26deg) translate(99px, -25px);
+		transition: transform 0.9s cubic-bezier(1, 0.82, 0.65, 1.18);
+	}
+	
+	&__simbol_5 {										//решетка
+	    top: 0;
+		bottom: auto;
+
+		font-size: 28px;
+
+		transform: rotate(17deg) translate(72px, 109px);
+		transition: transform 0.8s cubic-bezier(1, 0.82, 0.65, 1.18);
+	}
+	
+	&__simbol_6 {										//закрытый тег 
+		left: auto;
+		right: 0;    
+
+		font-size: 18px;
+
+		transform: rotate(-25deg) translate(-111px, -48px);
+		transition: transform 0.7s cubic-bezier(1, 0.82, 0.65, 1.18);
+	}
+
+	@include tablet { 
+		
+		&__simbol_1 {									//закрытый тег
+			display: block;
+
+			left: 581px;
+		    bottom: -50px;
+
+			font-size: 40px;
+
+			transform: rotate(-20deg) translate(-124px, -269px);
+			transition: transform 0.7s cubic-bezier(1, 0.82, 0.65, 1.18);
+		}
+		
+		&__simbol_2 {									//нижний див
+		    display: none;		
+		}
+
+		
+		&__simbol_3 {									//верхний див
+			font-size: 30px;       
+
+			transform: rotate(-12deg) translate(-170px, 8px);
+		}
+
+		&__simbol_4  {									//скобки
+			font-size: 51px;
+
+			transform: rotate(25deg) translate(138px, -10px);
+		}
+		
+		&__simbol_5 {									//решетка
+			top: 358px;
+	    	left: -50px;
+
+			font-size: 60px;
+
+			transform: rotate(17deg) translate(158px, 121px);
+		}		
+		
+		&__simbol_6 {	 								//закрытый тег
+			left: 352px;
+
+			font-size: 48px;
+
+			transform: rotate(15deg) translate(124px, 179px);
+		}
+	}
+
+	@include desktop { 
+
+		&__simbol_1 {									//закрытый тег
+			transform: rotate(150deg) translate(330px, 385px);
+		}
+		
+		&__simbol_2 {									//нижний див
+			display: block;	
+
+		    right: 690px;
+			bottom: -46px;
+
+			font-size: 38px;
+
+	        transform: rotate(22deg) translate(41px, 425px);		
+		}
+		
+		&__simbol_3 {									//верхний див	       
+			transform: rotate(-12deg) translate(-648px, -50px);
+		}
+
+		&__simbol_4  {									//скобки
+			transform: rotate(25deg) translate(372px, -150px);
+		}
+
+		&__simbol_5 {									//решетка	
+			transform: rotate(17deg) translate(50px, -320px);
+		}	
+		
+		&__simbol_6 {									//закрытый тег 
+			font-size: 48px;
+
+			transform: rotate(15deg) translate(-480px, 179px);
+		}
+	}	
+
+	@include desk-xs { 
+	
+		&__simbol_1 {									//закрытый тег
+			transform: rotate(150deg) translate(320px, 350px);
+		}
+		
+		&__simbol_2 {									//нижний див		
+			right: 880px;
+
+			transform: rotate(22deg) translate(148px, 425px);	
+		}
+		
+		&__simbol_3 {									//верхний див	    	    
+			transform: rotate(-12deg) translate(-948px, -182px);
+		}
+		
+		&__simbol_4 {									//скобки
+			transform: rotate(25deg) translate(172px, -50px);
+		}
+		
+		&__simbol_5 {									//решетка				
+			transform: rotate(17deg) translate(50px, -185px);
+		}
+	}
+
+	@include desk-s { 
+		
+		&__simbol_1 {									//закрытый тег
+			transform: rotate(150deg) translate(130px, 185px);
+		}
+		
+		&__simbol_2 {									//нижний див
+			transform: rotate(22deg) translate(41px, 425px);		
+		}
+		
+		&__simbol_3 {									//верхний див	    	    
+			transform: rotate(-12deg) translate(-900px, -182px);
+		}
+
+		&__simbol_5 {									//решетка			
+			transform: rotate(17deg) translate(150px, -185px);
+		}
+		&__simbol_6 {									//закрытый тег 
+			left: 352px;
+			transform: rotate(15deg) translate(-354px, 179px);
+		}
+	}
+
+	@include desk-m { 
+
+		
+		&__simbol_2 {									//нижний див
+			transform: rotate(22deg) translate(41px, 425px);	
+		}		
+		
+		&__simbol_3 {									//верхний див	    	    
+			transform: rotate(-12deg) translate(-1148px, -182px);
+		}
+		
+		&__simbol_5 {									//решетка		
+			transform: rotate(17deg) translate(250px, -185px);
+		}
+
+		&__simbol_6 {									//закрытый тег		
+		    left: -100px;
+		}
+	}	
+}
+
+
+
+
+
+
+
+
+
+

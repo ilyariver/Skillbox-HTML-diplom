@@ -1,0 +1,13 @@
+.request {
+	display: flex;
+
+	&__address {
+		margin-right: 34px;
+	}
+
+	@include tablet {
+		&__address {
+			margin-right: 29px;
+		}
+	}
+}

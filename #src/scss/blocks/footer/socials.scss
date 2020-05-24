@@ -1,0 +1,38 @@
+.socials {
+	display: flex;
+	
+	&__link {
+		width: 35px;
+		height: 32px;
+
+		margin-right: 20px;
+
+		background-image: $socials;
+		background-repeat: no-repeat;
+
+		&_vk {
+			background-position: -1px 8px;
+			&:hover {
+			    background-position: -46px 8px;
+			}
+		}
+		&_facebook {
+			background-position: -1px -61px;
+			&:hover {
+			    background-position: -46px -61px;	
+			}
+		}
+		&_twitter {
+			background-position: 1px -29px;
+			&:hover {
+			    background-position: -44px -29px;
+			}
+		}
+		&_instagram {
+			background-position: -3px -89px;
+			&:hover {
+				background-position: -48px -89px;
+			}
+		}
+	}
+}

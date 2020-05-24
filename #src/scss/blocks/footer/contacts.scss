@@ -1,0 +1,57 @@
+.contacts {
+	&_grey {
+		color: $second-txt-color;
+		font-weight: 500;
+		font-size: 20px;
+	}
+
+	&__link {
+		display: block;
+
+		margin-bottom: 18px;
+
+		padding-left: 32px;
+
+		background-repeat: no-repeat;
+		background-size: 14px;
+		background-position: left center;
+		
+		transition: $transition;
+
+		&_phone {
+			background-image: $callColor;
+			&:hover {
+				background-image: $callBlack;
+			}
+		}
+
+		&_envelop {
+			background-image: $mailColor;
+			&:hover {
+				background-image: $mailBlack;
+			}
+		}
+	}
+
+	@include tablet {
+		&_grey {
+			color: $global-txt-color;
+			font-size: 25px;
+		    line-height: 31px;
+		}
+
+		&__link {
+		    margin-bottom: 28px;
+		    background-size: auto;
+
+		    &_phone {
+		    	padding-left: 47px;
+		    	background-position: 11px 6px;
+		    }
+		    &_envelop {
+				padding-left: 55px;
+				background-position: 11px 10px;
+			}
+		}
+	}
+}

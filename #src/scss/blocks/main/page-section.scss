@@ -1,0 +1,49 @@
+.page-section {
+	position: relative;	
+
+	text-align: center;	
+
+	&__list {
+		margin-bottom: 10px; 
+	}
+
+	&_white {
+		background-color: $secondary-color;
+	}
+
+	&__title {
+		margin: 0 0 35px 0;
+
+		font-size: 30px;
+	}
+
+	&__example-title {
+	    margin: 0 0 40px 0;    
+
+		font-size: 30px;
+	}
+
+	@include tablet {
+		&__title {
+			margin-bottom: 80px;
+
+			font-size: 54px;
+		}
+
+		&__example-title {
+		    margin: 0 0 96px 0;    
+
+			font-size: 54px;
+		}
+
+		&__list {
+			margin-bottom: 21px; 
+		}
+	}
+
+	@include desktop {
+		&__list {
+			margin-bottom: 23px; 
+		}
+	}
+}

@@ -1,0 +1,31 @@
+.button {
+	&_orange {
+		width: 280px;
+		height: 55px;
+
+		padding: 10px;
+
+		background-color: $find-buttons;
+		color: $button-txt;
+		
+		&:hover {
+			background-color: $darken-button;
+		}
+	}
+
+	@include tablet {
+		&_orange {
+			width: 320px;
+			height: 68px;
+
+			font-size: 18px;
+		}
+	}
+
+	@include desktop {
+		&_orange {
+			width: 270px;
+			height: 60px;
+		}
+	}
+}
