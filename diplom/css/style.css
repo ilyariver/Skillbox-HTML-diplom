@@ -1746,30 +1746,3 @@ a {
     left: -100px;
   }
 }
-
-.webp .burger-btn { background-image: url(../img/header/gamburger_btn.webp); }
-
-.webp .button_style_phone { background-image: url(../img/header/call-mobile.webp); }
-
-.webp .list-skills__item_1 { background-image: url(../img/main/01.webp); }
-
-.webp .list-skills__item_2 { background-image: url(../img/main/02.webp); }
-
-.webp .list-skills__item_3 { background-image: url(../img/main/03.webp); }
-
-.webp .list-skills__item_4 { background-image: url(../img/main/04.webp); }
-
-.webp .contacts__link_phone { background-image: url(../img/footer/phone-icon.webp); }
-
-.webp .contacts__link_phone:hover { background-image: url(../img/footer/phone-icon-black.webp); }
-
-.webp .contacts__link_envelop { background-image: url(../img/footer/envelope-icon.webp); }
-
-.webp .contacts__link_envelop:hover { background-image: url(../img/footer/envelope-icon-black.webp); }
-
-.webp .socials__link { background-image: url(../img/footer/sprite.webp); }
-
-@media (min-width: 1300px) {
-
-  .webp .slider__arrow { background-image: url(../img/main/arrow.webp); }
-}

@@ -41,7 +41,6 @@ var uglify = require('gulp-uglify-es').default;
 var imagemin = require('gulp-imagemin');
 var webp = require('gulp-webp');
 var webpHtml = require('gulp-webp-html');
-var webpCss = require('gulp-webpcss');
 var svgSprite = require('gulp-svg-sprite');
 var ttf2woff = require('gulp-ttf2woff');
 var ttf2woff2 = require('gulp-ttf2woff2');
@@ -83,7 +82,6 @@ function css() {
             cascade: true
          })
       )
-      .pipe(webpCss())
       .pipe(dest(path.build.css))
       .pipe(cleanCss())
       .pipe(
