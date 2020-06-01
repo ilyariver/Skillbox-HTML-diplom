@@ -477,12 +477,8 @@ a {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding-top: 25px;
-  padding-bottom: 25px;
-}
-
-.page-nav__burger {
-  margin-top: 5px;
+  padding-top: 27px;
+  padding-bottom: 27px;
 }
 
 .nav-list {
@@ -527,10 +523,12 @@ a {
 .burger-btn {
   width: 24px;
   height: 24px;
-  background-image: url("../img/header/gamburger_btn.png");
+  padding: 0;
+  background-image: url("../img/header/open-menu.svg");
   background-repeat: no-repeat;
-  background-size: 24px 18px;
+  background-size: 24px 24px;
   background-color: transparent;
+  cursor: pointer;
   border: none;
 }
 
@@ -564,7 +562,7 @@ a {
 .button_style_phone {
   width: 26px;
   height: 26px;
-  background-image: url("../img/header/call-mobile.png");
+  background-image: url("../img/header/phone.svg");
 }
 
 .button__text {
@@ -688,8 +686,8 @@ a {
   top: 0;
   right: 0;
   width: 320px;
-  padding-top: 52px;
-  padding-left: 77px;
+  padding-top: 32px;
+  padding-left: 0px;
   background-image: url("../img/main/fig.svg");
   background-repeat: no-repeat;
   background-position: -62px 92px;
@@ -698,6 +696,10 @@ a {
 
 .man-info__container {
   position: relative;
+}
+
+.man-info__img {
+  margin-left: 20px;
 }
 
 .about {
@@ -780,19 +782,19 @@ a {
 }
 
 .list-skills__item_1 {
-  background-image: url("../img/main/01.png");
+  background-image: url("../img/main/01.svg");
 }
 
 .list-skills__item_2 {
-  background-image: url("../img/main/02.png");
+  background-image: url("../img/main/02.svg");
 }
 
 .list-skills__item_3 {
-  background-image: url("../img/main/03.png");
+  background-image: url("../img/main/03.svg");
 }
 
 .list-skills__item_4 {
-  background-image: url("../img/main/04.png");
+  background-image: url("../img/main/04.svg");
 }
 
 .slider {
@@ -931,23 +933,15 @@ a {
 }
 
 .contacts__link_phone {
-  background-image: url("../img/footer/phone-icon.png");
-}
-
-.contacts__link_phone:hover {
-  background-image: url("../img/footer/phone-icon-black.png");
+  background-image: url("../img/footer/phone-icon.svg");
 }
 
 .contacts__link_envelop {
-  background-image: url("../img/footer/envelope-icon.png");
-}
-
-.contacts__link_envelop:hover {
-  background-image: url("../img/footer/envelope-icon-black.png");
+  background-image: url("../img/footer/envelope-icon.svg");
 }
 
 .btn-social__button {
-  margin-bottom: 50px;
+  margin-bottom: 47px;
 }
 
 .socials {
@@ -958,42 +952,33 @@ a {
 
 .socials__link {
   width: 35px;
-  height: 32px;
+  height: 35px;
   margin-right: 20px;
-  background-image: url("../img/footer/sprite.png");
   background-repeat: no-repeat;
 }
 
 .socials__link_vk {
-  background-position: -1px 8px;
-}
-
-.socials__link_vk:hover {
-  background-position: -46px 8px;
+  background-image: url("../img/footer/vk.svg");
+  background-size: 35px;
+  background-position: 0 3px;
 }
 
 .socials__link_facebook {
-  background-position: -1px -61px;
-}
-
-.socials__link_facebook:hover {
-  background-position: -46px -61px;
+  background-image: url("../img/footer/facebook.svg");
+  background-size: 29px;
+  background-position: 4px 3px;
 }
 
 .socials__link_twitter {
-  background-position: 1px -29px;
-}
-
-.socials__link_twitter:hover {
-  background-position: -44px -29px;
+  background-image: url("../img/footer/twitter.svg");
+  background-size: 29px;
+  background-position: 1px 5px;
 }
 
 .socials__link_instagram {
-  background-position: -3px -89px;
-}
-
-.socials__link_instagram:hover {
-  background-position: -48px -89px;
+  background-image: url("../img/footer/instagram.svg");
+  background-size: 29px;
+  background-position: 1px 5px;
 }
 
 .copyright {
@@ -1017,14 +1002,10 @@ a {
     padding-bottom: 30px;
   }
 
-  .page-nav__burger {
-    margin-top: 7px;
-  }
-
   .burger-btn {
     width: 45px;
-    height: 32px;
-    background-size: 45px 32px;
+    height: 40px;
+    background-size: 46px 46px;
   }
 
   .request__address {
@@ -1209,6 +1190,10 @@ a {
     background-size: 919px 632px;
   }
 
+  .man-info__img {
+    margin-left: 0;
+  }
+
   .about {
     text-align: left;
   }
@@ -1257,7 +1242,7 @@ a {
     margin-right: 110px;
     margin-bottom: 70px;
     padding-top: 100px;
-    background-size: auto;
+    background-size: 75px;
     font-size: 20px;
     line-height: 30px;
   }
@@ -1329,7 +1314,7 @@ a {
   }
 
   .page-footer__contacts {
-    margin-left: 11px;
+    margin-left: 46px;
     padding-top: 5px;
   }
 
@@ -1362,21 +1347,21 @@ a {
 
   .contacts__link {
     margin-bottom: 28px;
-    background-size: auto;
+    background-size: 20px;
   }
 
   .contacts__link_phone {
     padding-left: 47px;
-    background-position: 11px 6px;
+    background-position: 10px 5px;
   }
 
   .contacts__link_envelop {
     padding-left: 55px;
-    background-position: 11px 10px;
+    background-position: 11px 8px;
   }
 
   .btn-social__button {
-    margin-bottom: 31px;
+    margin-bottom: 28px;
   }
 
   .button_size_s {
@@ -1527,6 +1512,7 @@ a {
     border: none;
     border-radius: 50%;
     cursor: pointer;
+    opacity: 0.8;
     -webkit-transition: 0.2s ease-in-out;
     -o-transition: 0.2s ease-in-out;
     transition: 0.2s ease-in-out;
@@ -1546,7 +1532,7 @@ a {
   .slider__arrow:hover {
     -webkit-box-shadow: 0 0 13px 3px #0000001c;
             box-shadow: 0 0 13px 3px #0000001c;
-    opacity: 0.8;
+    opacity: 1;
   }
 
   .slider__list {
@@ -1588,7 +1574,15 @@ a {
   }
 
   .page-footer__contacts {
-    margin-left: 49px;
+    margin-left: 83px;
+  }
+
+  .contacts__link_phone:hover {
+    background-image: url("../img/footer/phone-icon-black.svg");
+  }
+
+  .contacts__link_envelop:hover {
+    background-image: url("../img/footer/envelope-icon-black.svg");
   }
 
   .btn-social {
@@ -1598,6 +1592,22 @@ a {
   .button_size_s {
     width: 246px;
     height: 45px;
+  }
+
+  .socials__link_vk:hover {
+    background-image: url("../img/footer/vk-hover.svg");
+  }
+
+  .socials__link_facebook:hover {
+    background-image: url("../img/footer/facebook-hover.svg");
+  }
+
+  .socials__link_twitter:hover {
+    background-image: url("../img/footer/twitter-hover.svg");
+  }
+
+  .socials__link_instagram:hover {
+    background-image: url("../img/footer/instagram-hover.svg");
   }
 }
 

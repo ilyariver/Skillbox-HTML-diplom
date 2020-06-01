@@ -20,15 +20,21 @@
 
 		&_phone {
 			background-image: $callColor;
-			&:hover {
-				background-image: $callBlack;
+
+			@include desktop {
+				&:hover {
+					background-image: $callBlack;
+				}
 			}
 		}
 
 		&_envelop {
 			background-image: $mailColor;
-			&:hover {
-				background-image: $mailBlack;
+
+			@include desktop {
+				&:hover {
+					background-image: $mailBlack;
+				}
 			}
 		}
 	}
@@ -42,15 +48,15 @@
 
 		&__link {
 		    margin-bottom: 28px;
-		    background-size: auto;
+		    background-size: 20px;
 
 		    &_phone {
 		    	padding-left: 47px;
-		    	background-position: 11px 6px;
+		    	background-position: 10px 5px;
 		    }
 		    &_envelop {
 				padding-left: 55px;
-				background-position: 11px 10px;
+				background-position: 11px 8px;
 			}
 		}
 	}

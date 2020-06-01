@@ -13,8 +13,8 @@
 
 		width: 320px;
 		
-		padding-top: 52px;
-		padding-left: 77px;
+		padding-top: 32px;
+		padding-left: 0px;
 
 		background-image: $ellips;
 		background-repeat: no-repeat;
@@ -24,6 +24,10 @@
 
 	&__container {
 		position: relative;
+	}
+
+	&__img {
+		margin-left: 20px;
 	}
 
 	@include tablet {
@@ -46,6 +50,10 @@
 
 		    background-position: 1px 138px;
     		background-size: 919px 632px;
+		}
+
+		&__img {
+			margin-left: 0;
 		}
 	}
 

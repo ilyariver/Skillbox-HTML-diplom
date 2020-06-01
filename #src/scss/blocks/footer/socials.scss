@@ -3,35 +3,54 @@
 	
 	&__link {
 		width: 35px;
-		height: 32px;
+		height: 35px;
 
 		margin-right: 20px;
-
-		background-image: $socials;
+		
 		background-repeat: no-repeat;
+		
 
 		&_vk {
-			background-position: -1px 8px;
-			&:hover {
-			    background-position: -46px 8px;
+			background-image: $vk;
+			background-size: 35px;
+			background-position: 0 3px;
+			
+			@include desktop {
+				&:hover {
+					background-image: $vk-hover;
+				}
 			}
 		}
 		&_facebook {
-			background-position: -1px -61px;
-			&:hover {
-			    background-position: -46px -61px;	
+			background-image: $facebook;
+			background-size: 29px;
+			background-position: 4px 3px;
+
+			@include desktop {
+				&:hover {
+					background-image: $facebook-hover;	
+				}
 			}
 		}
 		&_twitter {
-			background-position: 1px -29px;
-			&:hover {
-			    background-position: -44px -29px;
+			background-image: $twitter;
+			background-size: 29px;
+			background-position: 1px 5px;
+			@include desktop {
+				&:hover {
+					background-image: $twitter-hover;
+				}
 			}
 		}
 		&_instagram {
-			background-position: -3px -89px;
-			&:hover {
-				background-position: -48px -89px;
+			background-image: $instagram;
+			background-size: 29px;
+			background-position: 1px 5px;
+
+			@include desktop {			
+				&:hover {
+					background-image: $instagram-hover;
+				}
 			}
 		}
 	}

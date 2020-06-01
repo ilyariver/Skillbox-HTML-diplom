@@ -2,17 +2,21 @@
 	width: 24px;
 	height: 24px;
 
+	padding: 0;
+
 	background-image: $image-burger;
 	background-repeat: no-repeat;
-	background-size: 24px 18px;
+	background-size: 24px 24px;
 	background-color: transparent;
+
+	cursor: pointer;
 	border: none;
 
 	@include tablet {
 		width: 45px;
-		height: 32px;
+		height: 40px;
 
-		background-size: 45px 32px;
+		background-size: 46px 46px;
 	}
 
 	@include desktop {
