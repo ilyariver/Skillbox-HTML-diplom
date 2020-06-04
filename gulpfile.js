@@ -15,14 +15,14 @@ var path = {
       html: [sourceFolder + '/*.html', '!' + sourceFolder + '/_*.html'],
       css: sourceFolder + '/scss/style.scss',
       js: sourceFolder + '/js/script.js',
-      img: sourceFolder + '/img/**/*.{jpg,png,svg,gif,ico,webp}',
+      img: sourceFolder + '/img/**/*.{jpg,png,svg,gif,ico,webp,pdf}',
       fonts: sourceFolder + '/fonts/*.{woff2,woff}',
    },
    watch: {
       html: sourceFolder + '/**/*.html',
       css: sourceFolder + '/scss/**/*.scss',
       js: sourceFolder + '/js/**/*.js',
-      img: sourceFolder + '/img/**/*.{jpg,png,svg,gif,ico,webp}',
+      img: sourceFolder + '/img/**/*.{jpg,png,svg,gif,ico,webp,pdf}',
    },
    clean: './' + projectFolder + '/'
 }

@@ -1,0 +1,175 @@
+.modal-callback {
+   position: fixed;
+   top: 20%;
+   
+   width: 100%;
+   max-width: 100%;
+
+   height: 480px;
+   max-height: 100%;
+
+   background-color: #fff;
+
+   opacity: 1;
+
+   transition: $transition;
+
+   z-index: 510;
+
+   @include tablet {
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+
+      width: 480px;      
+
+      border-radius: 5px;
+   }
+
+   &__container {      
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      position: absolute;
+      top: 0;
+      left: 0;
+
+      width: 100%;
+      height: 100%;
+
+      padding: 30px;
+
+      overflow: auto;
+   }
+
+   &__close {
+      position: absolute;
+      right: -25px;
+      top: -25px;
+   }
+
+   &__title {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      margin: 0 0 20px 0;
+      
+      line-height: 40px;
+
+      &_violet {
+         color: #d760f0;
+      }
+      &_regular {
+         font-weight: 400;
+      }
+   }
+
+   &__form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      width: 100%;
+   }
+
+   .form {
+
+      &_border {
+         padding-left: 20px;
+
+         max-width: 400px;
+         width: 100%;
+
+         height: 55px;
+         
+         border: none;
+         border-radius: 5px;
+         
+         border: 1px solid #d5d5d5;
+      }
+   
+      &__name {
+         margin-bottom: 20px;
+      }
+   
+      &__mail {         
+         margin-bottom: 35px;
+      } 
+      
+      &__button {
+         margin-bottom: 20px;
+
+         max-width: 400px;
+         width: 100%;
+
+         border: none;
+         cursor: pointer;
+      }
+     
+   }
+     
+   .close {
+      background-image: $close;
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-color: transparent;
+   
+      width: 20px;
+      height: 20px;
+   
+      cursor: pointer;
+   
+      border: none;
+      
+   
+      &:hover {
+         background-image: $close-hover;
+      }
+   }
+
+   .personal {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+
+
+		&__checkbox {
+         
+		}
+
+		&__link {
+         margin-left: 20px;
+
+         font-size: 9px;
+         color: $colorLinkPersonal;
+         border-bottom: 1px dashed $colorLinkPersonal;
+      }
+     
+      @include tablet {
+         &__link {
+            font-size: 12px;
+         }
+      }      
+   }
+}
+
+.modal-overlay {
+   position: fixed;
+   top: 0;
+   left: 0;
+
+   background-color: #00000096;
+
+   width: 100%;
+   height: 100%;
+
+   z-index: 500;
+}
+
+.closed {
+   visibility: hidden;
+   opacity: 0;
+   transform: translateY(-150%);
+}

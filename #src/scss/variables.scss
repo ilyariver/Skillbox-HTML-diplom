@@ -24,6 +24,8 @@ $transper-txt: #f53f4f;
 
 $colorTags: linear-gradient(to top right, #ff8a5d, #ff2f96);
 
+$colorLinkPersonal: #959595;
+
 // for hover
 
 $darken-button: darken($find-buttons, 30%);
@@ -68,4 +70,10 @@ $mobile-titles: 30px;
 $tablet-titles: 54px;
 $desk-h1: 80px;
 $global-fz: 16px;
+
+
+// elements 
+
+$close: url("../img/elements/close.svg");
+$close-hover: url("../img/elements/close-hover.svg");
 
